@@ -1,1 +1,6 @@
-
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'dcd-cnp-dev'
+    ScriptType: 'FilePath'
+    ScriptPath: 'test'
+    pwsh: true
