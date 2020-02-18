@@ -3,11 +3,14 @@ name: Ops Pipelines - Azure AD
 trigger:
 - master
 
-- repository: ops-azure-ad
-  type: github
-  endpoint: hmcts
-  name: hmcts/ops-azure-ad
+resources:
+  repositories:
+  - repository: ops-azure-ad
+    type: github
+    endpoint: hmcts
+    name: hmcts/ops-azure-ad
 
+steps:
 - task: AzurePowerShell@5
   inputs:
     azureSubscription: 'dcd-cnp-dev'
