@@ -11,9 +11,13 @@ resources:
     name: hmcts/ops-azure-ad
 
 steps:
+- checkout: ops-azure-ad
+  clean: true
+  path: ops-azure-ad
+
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: 'dcd-cnp-dev'
-    ScriptType: 'FilePath'
-    ScriptPath: 'test'
+    azureSubscription: dcd-cnp-dev
+    ScriptType: FilePath
+    ScriptPath: ops-azure-ad/aad.ps1
     pwsh: true
