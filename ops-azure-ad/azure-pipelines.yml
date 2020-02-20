@@ -24,7 +24,6 @@ steps:
     azureSubscription: dcd-cnp-dev
     ScriptType: FilePath
     ScriptPath: $(Build.SourcesDirectory)/aad.ps1
-    azurePowerShellVersion: latestVersion
     scriptArguments:
       -UserConfigPath $(userConfigPath) 
       -GroupConfigPath $(groupConfigPath)
