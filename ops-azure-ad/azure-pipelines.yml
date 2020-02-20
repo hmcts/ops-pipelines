@@ -14,7 +14,7 @@ resources:
 steps:
 - checkout: ops-azure-ad
   clean: true
-  path: $(Build.SourcesDirectory)\ops-azure-ad
+  path: ops-azure-ad
 
 
 - task: AzurePowerShell@5
