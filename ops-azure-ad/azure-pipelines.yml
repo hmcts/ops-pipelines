@@ -4,8 +4,8 @@ trigger:
 - master
 
 variables:
-  userConfigPath: $(Build.SourcesDirectory)/vars/users
-  groupConfigPath: $(Build.SourcesDirectory)/vars/groups
+  userConfigPath: $(Build.SourcesDirectory)/ops-azure-ad/vars/users
+  groupConfigPath: $(Build.SourcesDirectory)/ops-azure-ad/vars/groups
 
 resources:
   repositories:
