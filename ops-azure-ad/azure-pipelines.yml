@@ -14,12 +14,12 @@ resources:
 steps:
 - checkout: ops-azure-ad
   clean: true
-  path: ops-azure-ad
+  # path: ops-azure-ad
 
 - task: AzurePowerShell@5
   inputs:
     azureSubscription: dcd-cnp-dev
     ScriptType: FilePath
-    ScriptPath: $(Build.SourcesDirectory)\ops-azure-ad\aad.ps1
+    ScriptPath: $(Build.SourcesDirectory)\aad.ps1
     pwsh: true
     azurePowerShellVersion: latestVersion
