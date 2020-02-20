@@ -16,15 +16,6 @@ steps:
   clean: true
   path: ops-azure-ad
 
-
-- task: AzurePowerShell@5
-  inputs:
-    azureSubscription: dcd-cnp-dev
-    ScriptType: InLine
-    inline: "ls -la"
-    pwsh: true
-    azurePowerShellVersion: latestVersion  
-
 - task: AzurePowerShell@5
   inputs:
     azureSubscription: dcd-cnp-dev
