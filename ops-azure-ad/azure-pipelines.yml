@@ -14,7 +14,16 @@ resources:
 steps:
 - checkout: ops-azure-ad
   clean: true
-  path: ops-azure-ad
+  path: $(Build.SourcesDirectory)\ops-azure-ad
+
+
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: dcd-cnp-dev
+    ScriptType: InLine
+    inline: "ls -la"
+    pwsh: true
+    azurePowerShellVersion: latestVersion  
 
 - task: AzurePowerShell@5
   inputs:
@@ -23,4 +32,3 @@ steps:
     ScriptPath: $(Build.SourcesDirectory)\ops-azure-ad\aad.ps1
     pwsh: true
     azurePowerShellVersion: latestVersion
-    
