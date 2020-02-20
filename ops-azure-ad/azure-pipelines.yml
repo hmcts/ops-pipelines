@@ -8,7 +8,7 @@ resources:
   - repository: ops-azure-ad
     type: github
     endpoint: hmcts
-    name: hmcts/ops-azure-ad
+    name: "hmcts/ops-azure-ad"
 
 steps:
 - checkout: ops-azure-ad
