@@ -9,7 +9,7 @@ resources:
     type: github
     endpoint: hmcts
     name: hmcts/ops-azure-ad
-    persistCredentials: true
+    clean: true
 
 steps:
 - checkout: ops-azure-ad
