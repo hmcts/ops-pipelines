@@ -20,6 +20,6 @@ steps:
   inputs:
     azureSubscription: dcd-cnp-dev
     ScriptType: FilePath
-    ScriptPath: $(Build.SourcesDirectory)\aad.ps1
+    ScriptPath: $(Build.SourcesDirectory)/aad.ps1
     pwsh: true
     azurePowerShellVersion: latestVersion
